@@ -3,8 +3,8 @@
   <!-- Logo container: clickable area to refresh or navigate home -->
   <div class="header__logo" (click)="refresh()">
     <!-- Site title and logo image; cursor pointer indicates interactivity -->
-    <h1 class="logo__text" style="cursor:pointer;">
-      <img src="/assets/images/MedIQ_icon.svg" alt="logo" style="cursor:pointer;" />
+    <h1 class="logo__text">
+      <img src="/assets/images/MedIQ_icon.svg" alt="logo"  />
     </h1>
   </div>
 
@@ -199,7 +199,6 @@
       <div class="sql-modal-body">
         <pre
           class="sql-content">{{ sqlCommand?.trim() || 'No SQL command returned.' }}<br/><br/>{{ sqlFunctionCommand?.trim() || 'No SQL command returned.' }}</pre>
-        <!-- <pre class="sql-content">{{ sqlFunctionCommand?.trim() || 'No SQL command returned.' }}</pre> -->
       </div>
 
       <!-- Modal footer: feedback for copy action -->
